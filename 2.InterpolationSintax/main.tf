@@ -1,13 +1,13 @@
 provider "aws"{
-    region = "eu-west-1"
+    region = "us-west-2"
 }
 
-resource "aws_vpc" "my_vpc"{
-    cidr_block = "10.0.0.0/16"
+resource "aws_vpc" "test_vpc"{
+    cidr_block = "10.10.0.0/16"
 }
 
 resource "aws_security_group" "my_security_group"{
-    vpc_id = aws_vpc.my_vpc.id
+    vpc_id = aws_vpc.test_vpc.id
     name = "Test-Security-Group"
 }
 
