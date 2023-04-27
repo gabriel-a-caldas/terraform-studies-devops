@@ -1,7 +1,7 @@
 provider "aws" {
-    region = "eu-west-1"
+    region = "us-west-2"
 }
 
 resource "aws_s3_bucket" "second_bucket"{
-    bucket = "testgabriel1-second-bucket"
+    bucket = "sam-bucket-15092001"
 }
